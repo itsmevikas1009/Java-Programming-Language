@@ -30,12 +30,19 @@ public class DataTypes {
         String name = sc.nextLine();
         System.out.println(name);
         */
-
+        /*
         int n1 = sc.nextInt();
         System.out.println(n1);
 
         float n2 = sc.nextFloat();
         System.out.println(n2);
-
+        */
+        //Sum of a&b By taking Input
+        System.out.print("Enter first Number: ");
+        int n1 = sc.nextInt();
+        System.out.print("Enter second Number: ");
+        int n2 = sc.nextInt();
+        int Sum = n1 + n2;
+        System.out.println("Sum of a&b" + " = " + Sum);
     }
 }
