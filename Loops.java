@@ -91,6 +91,31 @@ public class Loops {
         } while (counter2 <= 100);
         */
 
+
+        //Break Statement
+        /*
+        for (int i = 1;i <= 5;i++) {
+            if (i == 3) {
+                break;
+            }
+            System.out.println(i);
+        }
+        System.out.println("You are out of Loop");
+        */
+
+        //Keep entering the number till user enters a multiple of 10
+        /*
+        do {
+            System.out.print("Enter Number: ");
+            int num4 = sc.nextInt();
+            if(num4 % 10 == 0) {
+                break;
+            }
+            System.out.println(num4);
+        } while (true);
+        */
+
+
         //Print all Number except multiple of 10
         /*
         do {
@@ -103,6 +128,22 @@ public class Loops {
             System.out.println("Number was: "+num);
         } while(true);
         */
+
+        //Prime or Not Prime
+        System.out.print("Enter Number: ");
+        int num5 = sc.nextInt();
+        boolean check = true;
+        for(int i = 2;i < Math.sqrt(num5);i++) {
+            if(num5 % i == 0) {
+                check = false;
+                break;
+            }
+        }
+        if(check) {
+            System.out.println(num5 + " is a Prime Number");
+        } else {
+            System.out.println(num5 + " is not a Prime Number");
+        }
 
     }
 }
