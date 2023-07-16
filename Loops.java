@@ -60,27 +60,31 @@ public class Loops {
         */
 
         //Print Reverse of a Number
-        /*
+
         int num2 = 110283;
+        int lastDigit;
         int rev1 = 0;
         while (num2 > 0) {
-            rev1 = rev1 * 10 + (num2 % 10);
+            lastDigit = num2 % 10;
+            System.out.print(lastDigit);
             num2 /= 10;
         }
-        System.out.println("Reversed Number = " + rev);
-        */
+        System.out.println();
+
 
         //Print Reverse of a Given Number
-        /*
+
         System.out.print("Enter a Number: ");
         int num3 = sc.nextInt();
-        int rev2 = 0;
+        int lastDigit1;
+        int rev = 0;
         while (num3 > 0) {
-            rev2 = rev2 * 10 + (num3 % 10);
+            lastDigit1 = num3 % 10;
+            rev = rev * 10 + lastDigit1;
             num3 /= 10;
         }
         System.out.println("Reversed Number = " + rev);
-        */
+
 
         //do-while Loop
         /*
