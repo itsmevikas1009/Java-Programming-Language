@@ -46,7 +46,5 @@ public class Pattern_Part_I {
             System.out.println();
         }
         */
-
-        //
     }
 }
