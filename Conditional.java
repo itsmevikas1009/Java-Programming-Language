@@ -15,6 +15,7 @@ public class Conditional {
             System.out.println("Not Adult");
         }
         */
+
         //Print the largest of 2
         /*
         System.out.print("Enter value of A: ");
@@ -37,6 +38,7 @@ public class Conditional {
             System.out.println("Odd");
         }
         */
+
         //else-if Statement
         /*
         if (age >= 18){
@@ -49,6 +51,7 @@ public class Conditional {
             System.out.println("Not Adult");
         }
         */
+
         //Income Tax Calculator
         /*
         System.out.print("Enter Your Income: ");
@@ -65,6 +68,7 @@ public class Conditional {
             System.out.println("Your Tax for this Year = "+tax);
         }
         */
+
         //Print the Largest of 3
         /*
         System.out.println("Enter 3 Numbers: ");
@@ -79,6 +83,7 @@ public class Conditional {
             System.out.println(n3 + " is Largest");
         }
         */
+
         //Ternary Operator
         /*
         String Largest = (A>=B)?A+" is Largest.":B+" is Largest.";
@@ -99,6 +104,7 @@ public class Conditional {
             default -> System.out.println("We wake up");
         }
         */
+
         //Calculator
         System.out.println("Enter two Numbers: ");
         int num1 = sc.nextInt();
