@@ -45,6 +45,21 @@ public class Function_Methods {
         return nCr;
     }
 
+    //FUnction to find sum of 2 integer values
+    public static int sum(int a, int b){
+        return a+b;
+    }
+
+    //Function to find sum of 3 integers values
+    public static int sum(int a, int b, int c){
+        return a+b+c;
+    }
+
+    //Function to find sum of two float values
+    public static float sum(float a, float b){
+        return a+b;
+    }
+
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         /*
@@ -80,11 +95,32 @@ public class Function_Methods {
         */
 
         //Binomial Coefficient
+        /*
         System.out.print("Enter value of n : ");
         int n = sc.nextInt();
         System.out.print("Enter value of r : ");
         int r = sc.nextInt();
         int nCr = binCoeff(n,r);
         System.out.println("Binomial Coefficient of given value = " + nCr);
+        */
+
+        //Function Overloading using Parameters
+        /*
+        int n1 = 10;
+        int n2 = 35;
+        int n3 = 59;
+
+        System.out.println("Sum of 2 no. = " + sum(n1,n3));
+        System.out.println("Sum of 3 no. = " + sum(n1,n2,n3));
+        */
+
+        //Function Overloading using Data Types
+        int n4 = 10;
+        int n5 = 59;
+        float f1 = 10.43F;
+        float f2 = 43.06F;
+
+        System.out.println("Sum of 2 Integer Values = " + sum(n4,n5));
+        System.out.println("Sum of 2 Float Values = " + sum(f1,f2));
     }
 }
