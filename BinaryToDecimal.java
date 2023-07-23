@@ -1,8 +1,8 @@
 public class BinaryToDecimal {
      public static void BinToDeci(int binNum){
+         int myNum = binNum;
          int pow = 0;
          int deciNum = 0;
-         int myNum = binNum;
          while(binNum > 0){
              int lastD = binNum % 10;
              deciNum += lastD * Math.pow(2,pow);
