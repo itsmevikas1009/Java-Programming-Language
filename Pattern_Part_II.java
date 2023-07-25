@@ -30,13 +30,23 @@ public class Pattern_Part_II {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
+        //Function Call for Hollow Rectange
+        /*
         System.out.print("Enter Number of Row: ");
         int row = sc.nextInt();
         System.out.print("Enter Number of Column: ");
         int col = sc.nextInt();
         Hollow_Rec(row,col);
+        */
 
-        half_rotated_Pyramid(5);
+        //Function call for Inverted & Half Rotated Pyramid
+        /*
+        System.out.print("Enter number of Row: ");
+        int n = sc.nextInt();
+        half_rotated_Pyramid(n);
+        */
+
+
     }
 
 }
