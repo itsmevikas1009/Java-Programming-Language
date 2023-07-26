@@ -113,7 +113,22 @@ public class Pattern_Part_II {
         }
     }
 
-
+    //Funtion to Print Hollow RHOMBUS
+    public static void Hollow_Rhombus(int n){
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= n-i; j++){
+                System.out.print("  ");
+            }
+            for(int j = 1; j <= n; j++){
+                if(i == 1 || i == n || j == 1 || j== n) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
@@ -162,9 +177,18 @@ public class Pattern_Part_II {
         */
 
         //Function Call for Printing SOLID RHOMBUS
+        /*
         System.out.print("Enter Number of Row: ");
         int n4 = sc.nextInt();
         Solid_Rhombus(n4);
+        */
+
+        //Function Call for Printing Hollow RHOMBUS
+        System.out.print("Enter Number of Row: ");
+        int n5 = sc.nextInt();
+        Hollow_Rhombus(n5);
+
+
     }
 
 }
