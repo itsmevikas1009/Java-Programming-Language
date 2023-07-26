@@ -63,6 +63,42 @@ public class Pattern_Part_II {
             System.out.println();
         }
     }
+
+    //Function to Print Butterfly Pattern
+    public static void Butterfly_Pattern(int n){
+        //first half
+        for(int i = 1; i <= n; i++){
+            //stars - i
+            for(int j =1; j  <= i; j++){
+                System.out.print("* ");
+            }
+            //spaces - 2*(n-i)
+            for(int j = 1; j  <= 2*(n - i); j++){
+                System.out.print("  ");
+            }
+            //stars - i
+            for(int j =1; j  <= i; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        //second half
+        for(int i = n; i >= 1; i--){
+            //stars - i
+            for(int j =1; j  <= i; j++){
+                System.out.print("* ");
+            }
+            //spaces - 2*(n-i)
+            for(int j = 1; j  <= 2*(n - i); j++){
+                System.out.print("  ");
+            }
+            //stars - i
+            for(int j =1; j  <= i; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
@@ -97,9 +133,18 @@ public class Pattern_Part_II {
         */
 
         //Function Call for Printing 0-1 Triangle
+        /*
         System.out.print("Enter Number of Row: ");
         int n2 = sc.nextInt();
         zero_one_Triangle(n2);
+        */
+
+        //Function Call for Printing Butterfly Patter
+        System.out.print("Enter Number of Row: ");
+        int n3 = sc.nextInt();
+        Butterfly_Pattern(n3);
+
+
     }
 
 }
