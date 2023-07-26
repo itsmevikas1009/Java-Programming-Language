@@ -39,12 +39,26 @@ public class Pattern_Part_II {
     }
 
     //Function to Print FLOYD'S Triangle
-    public static void Floyds_Triange(int n) {
+    public static void Floyd_Triangle(int n) {
         int counter = 1;
         for(int i = 1; i <= n; i++){
             for(int j = 1; j <= i; j++){
                 System.out.print(counter + " ");
                 counter++;
+            }
+            System.out.println();
+        }
+    }
+
+    //Function to Print 0-1 Triangle
+    public static void zero_one_Triangle(int n){
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= i; j++){
+                if((i + j) % 2 == 0){
+                    System.out.print("1 ");
+                } else{
+                    System.out.print("0 ");
+                }
             }
             System.out.println();
         }
@@ -76,10 +90,16 @@ public class Pattern_Part_II {
         */
 
         //Function Call for Printing FLOYD'S Triangle
+        /*
         System.out.print("Enter Number of Row: ");
         int n1 = sc.nextInt();
-        Floyds_Triange(n1);
+        Floyd_Triangle(n1);
+        */
 
+        //Function Call for Printing 0-1 Triangle
+        System.out.print("Enter Number of Row: ");
+        int n2 = sc.nextInt();
+        zero_one_Triangle(n2);
     }
 
 }
