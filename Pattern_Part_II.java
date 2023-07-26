@@ -129,6 +129,34 @@ public class Pattern_Part_II {
             System.out.println();
         }
     }
+
+    //Function to Print Diamond Pattern
+    public static void Diamond_Pattern(int n){
+        //first half
+        for(int i = 1; i <= n; i++){
+            //spaces - n-i
+            for(int j = 1; j <= n-i; j++){
+                System.out.print("  ");
+            }
+            //stars - 2*i -1
+            for(int j = 1; j <= 2*i - 1; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        //second half
+        for(int i = n; i >= 1; i--){
+            //spaces - n-i
+            for(int j = 1; j <= n-i; j++){
+                System.out.print("  ");
+            }
+            //stars - 2*i -1
+            for(int j = 1; j <= 2*i - 1; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
@@ -184,11 +212,16 @@ public class Pattern_Part_II {
         */
 
         //Function Call for Printing Hollow RHOMBUS
+        /*
         System.out.print("Enter Number of Row: ");
         int n5 = sc.nextInt();
         Hollow_Rhombus(n5);
+        */
 
-
+        //Function Call for Printing Diamond Patten
+        System.out.print("Enter Number of Row: ");
+        int n6 = sc.nextInt();
+        Diamond_Pattern(n6);
     }
 
 }
