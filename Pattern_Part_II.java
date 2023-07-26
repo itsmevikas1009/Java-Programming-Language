@@ -37,6 +37,18 @@ public class Pattern_Part_II {
             System.out.println();
         }
     }
+
+    //Function to Print FLOYD'S Triangle
+    public static void Floyds_Triange(int n) {
+        int counter = 1;
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= i; j++){
+                System.out.print(counter + " ");
+                counter++;
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
@@ -49,18 +61,24 @@ public class Pattern_Part_II {
         Hollow_Rec(row,col);
         */
 
-        //Function call for Inverted & Half Rotated Pyramid
+        //Function Call for Inverted & Half Rotated Pyramid
         /*
         System.out.print("Enter number of Row: ");
         int n = sc.nextInt();
         half_rotated_Pyramid(n);
         */
 
-        //Function call for Print Inverted Half-Pyramid with Numbers
+        //Function Call for Print Inverted Half-Pyramid with Numbers
+        /*
         System.out.print("Enter Number of Row: ");
         int num = sc.nextInt();
         half_Pyramid_Num(num);
+        */
 
+        //Function Call for Printing FLOYD'S Triangle
+        System.out.print("Enter Number of Row: ");
+        int n1 = sc.nextInt();
+        Floyds_Triange(n1);
 
     }
 
