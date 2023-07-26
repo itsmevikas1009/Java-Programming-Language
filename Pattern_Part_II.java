@@ -99,6 +99,21 @@ public class Pattern_Part_II {
             System.out.println();
         }
     }
+
+    //Function to Print SOLID RHOMBUS
+    public static void Solid_Rhombus(int n){
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= n-i; j++){
+                System.out.print("  ");
+            }
+            for(int j = 1; j <= n; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
@@ -140,11 +155,16 @@ public class Pattern_Part_II {
         */
 
         //Function Call for Printing Butterfly Patter
+        /*
         System.out.print("Enter Number of Row: ");
         int n3 = sc.nextInt();
         Butterfly_Pattern(n3);
+        */
 
-
+        //Function Call for Printing SOLID RHOMBUS
+        System.out.print("Enter Number of Row: ");
+        int n4 = sc.nextInt();
+        Solid_Rhombus(n4);
     }
 
 }
