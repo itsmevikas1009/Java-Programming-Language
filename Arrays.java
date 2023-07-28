@@ -1,7 +1,22 @@
+import java.util.Scanner;
+
 public class Arrays {
     public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
         //Creating an Array
         int marks[] = new int[5];
+
+        System.out.print("Enter Marks of Physics: ");
+        marks[0] = sc.nextInt();
+        System.out.print("Enter Marks of Chemistry: ");
+        marks[1] = sc.nextInt();
+        System.out.print("Enter Marks of Maths: ");
+        marks[2] = sc.nextInt();
+
+        System.out.println("Phy : " + marks[0]);
+        System.out.println("Chem : " + marks[1]);
+        System.out.println("Maths : " + marks[2]);
 
         // declares an Array of integers.
         int[] arr;
@@ -21,9 +36,8 @@ public class Arrays {
         arr[4] = 50;
 
         // accessing the elements of the specified array
-        for (int i = 0; i < arr.length; i++)
-            System.out.println("Element at index " + i
-                    + " : " + arr[i]);
-
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println("Element at index " + i + " : " + arr[i]);
+        }
     }
 }
