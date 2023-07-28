@@ -1,11 +1,18 @@
 import java.util.Scanner;
 
 public class Arrays {
+
+    //Passing Array as Arguments
+    public static void Update_Marks(int marks[]){
+        for(int i = 0; i < marks.length; i++){
+            marks[i] += 1;
+        }
+    }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
         //Creating an Array
-        int marks[] = new int[5];
+        int marks[] = new int[0];
 
         System.out.print("Enter Marks of Physics: ");
         marks[0] = sc.nextInt();
@@ -18,6 +25,11 @@ public class Arrays {
         System.out.println("Chem : " + marks[1]);
         System.out.println("Maths : " + marks[2]);
 
+        Update_Marks(marks);
+        for(int i = 0; i < marks.length; i++){
+            System.out.print(marks[i] + " ");
+        }
+        System.out.println();
         // declares an Array of integers.
         int[] arr;
 
@@ -39,5 +51,7 @@ public class Arrays {
         for (int i = 0; i < arr.length; i++) {
             System.out.println("Element at index " + i + " : " + arr[i]);
         }
+
+        
     }
 }
