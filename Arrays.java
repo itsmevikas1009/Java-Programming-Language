@@ -12,7 +12,7 @@ public class Arrays {
         Scanner sc = new Scanner(System.in);
 
         //Creating an Array
-        int marks[] = new int[0];
+        int marks[] = new int[3];
 
         System.out.print("Enter Marks of Physics: ");
         marks[0] = sc.nextInt();
@@ -52,6 +52,8 @@ public class Arrays {
             System.out.println("Element at index " + i + " : " + arr[i]);
         }
 
-        
+        String str1 = "Java";
+        String str2 = new String("Java");
+        System.out.println(str1 == str2);
     }
 }
