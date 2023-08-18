@@ -1,8 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
-        }
+        //Syntax
+        // datatype[] variable_name = new datatype[size];
+        //Store 5 Roll No
+        int[] rollno = new int[5];
+        //or
+        int[] rollno2 = {12, 32, 43, 65, 23};
     }
 }
