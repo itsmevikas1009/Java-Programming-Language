@@ -36,6 +36,12 @@ public class Input {
         for (int i = 0; i < str.length; i++) {
             str[i] = in.next();
         }
+        // Output
+
+//        for(String S : str){
+//            System.out.println(S);
+//        }
+        //Output
 
         System.out.println(Arrays.toString(str));
 
