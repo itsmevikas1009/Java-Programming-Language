@@ -19,15 +19,15 @@ public class Input {
             arr[i] = in.nextInt();
         }
 
-//        for (int i = 0; i < arr.length; i++) {
-//            System.out.print(arr[i] + " ");
-//        }
+        // for (int i = 0; i < arr.length; i++) {
+        // System.out.print(arr[i] + " ");
+        // }
 
-//        for (int num : arr) { //for every element in array, print the element
-//            System.out.print(num + " "); //here num represents element of the array
-//        }
+        // for (int num : arr) { //for every element in array, print the element
+        // System.out.print(num + " "); //here num represents element of the array
+        // }
 
-//        System.out.println(arr[5]); //Index out of bound of error
+        // System.out.println(arr[5]); //Index out of bound of error
 
         System.out.println(Arrays.toString(arr));
 
@@ -38,10 +38,10 @@ public class Input {
         }
         // Output
 
-//        for(String S : str){
-//            System.out.println(S);
-//        }
-        //Output
+        // for(String S : str){
+        // System.out.println(S);
+        // }
+        // Output
 
         System.out.println(Arrays.toString(str));
 
@@ -49,5 +49,7 @@ public class Input {
         str[3] = "Devil";
 
         System.out.println(Arrays.toString(str));
+
+        in.close();
     }
 }
